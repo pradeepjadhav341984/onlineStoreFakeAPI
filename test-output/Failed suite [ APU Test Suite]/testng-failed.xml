@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [ APU Test Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="testcases.LoginTests">
+        <methods>
+          <include name="testvalidUserLogin"/>
+          <include name="testInvalidUserLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.LoginTests -->
+      <class name="testcases.CartTests">
+        <methods>
+          <include name="testCreateCart"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.CartTests -->
+      <class name="testcases.SchemaTests">
+        <methods>
+          <include name="testCartSchema"/>
+          <include name="testProductSchema"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.SchemaTests -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [ APU Test Suite]] -->

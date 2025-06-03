@@ -1,0 +1,321 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 03 14:19:14 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>35 seconds (35976 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.CartTests.testCreateCart()'><b>testCreateCart</b><br>Test class: testcases.CartTests</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+JSON path userId doesn&apos;t match.
+Expected: &lt;1&gt;
+  Actual: null
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at testcases.CartTests.testCreateCart(CartTests.java:154)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1915066647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1915066647'><pre>java.lang.AssertionError: 1 expectation failed.
+JSON path userId doesn&apos;t match.
+Expected: &lt;1&gt;
+  Actual: null
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at testcases.CartTests.testCreateCart(CartTests.java:154)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CartTests@2eea88a1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGetProductByLimit()'><b>tetsGetProductByLimit</b><br>Test class: testcases.ProductsTest<br>Test method: get the  products by limit</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.ProductDataDriven.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDriven<br>Parameters: {id=2, title=Wireless Sports Headband, price=25.99, description=Comfortable and sweat-resistant for athletes., image=https://1.pradeep.cc/122, category=sports}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDriven@41488b16</td></tr>
+<tr>
+<td title='testcases.ProductDataDriven.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDriven<br>Parameters: {id=5, title=4G Dual SIM Smartphone, price=299.99, description=Latest Android OS with long-lasting battery., image=https://1.pradeep.cc/125, category=mobile}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDriven@41488b16</td></tr>
+<tr>
+<td title='testcases.ProductDataDriven.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDriven<br>Parameters: {id=3, title=Smart LED TV 55", price=499.00, description=Ultra HD with built-in apps and voice control., image=https://1.pradeep.cc/123, category=tv}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDriven@41488b16</td></tr>
+<tr>
+<td title='testcases.ProductDataDriven.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDriven<br>Parameters: {id=4, title=Noise Cancelling Headphones, price=129.99, description=Crystal clear audio with deep bass., image=https://1.pradeep.cc/124, category=audio}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDriven@41488b16</td></tr>
+<tr>
+<td title='testcases.UserTests.testGetUserById()'><b>testGetUserById</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.SchemaTests.testUserSchema()'><b>testUserSchema</b><br>Test class: testcases.SchemaTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.SchemaTests@7fd7a283</td></tr>
+<tr>
+<td title='testcases.UserTests.testGetUsersSorted()'><b>testGetUsersSorted</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsDeleteProduct()'><b>tetsDeleteProduct</b><br>Test class: testcases.ProductsTest<br>Test method: delete the existing product </td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGetProductBySortedDending()'><b>tetsGetProductBySortedDending</b><br>Test class: testcases.ProductsTest<br>Test method: get the  products by sort decending order</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.UserTests.testGetUsersWithLimit()'><b>testGetUsersWithLimit</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.ProductDataDriven.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDriven<br>Parameters: {id=6, title=Portable Bluetooth Speaker, price=45.50, description=Waterproof and perfect for outdoor use., image=https://1.pradeep.cc/126, category=electronics}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDriven@41488b16</td></tr>
+<tr>
+<td title='testcases.LoginTests.testInvalidUserLogin()'><b>testInvalidUserLogin</b><br>Test class: testcases.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTests@7ac296f6</td></tr>
+<tr>
+<td title='testcases.SchemaTests.testCartSchema()'><b>testCartSchema</b><br>Test class: testcases.SchemaTests</td>
+<td></td>
+<td>1</td>
+<td>testcases.SchemaTests@7fd7a283</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGetAllProducts()'><b>tetsGetAllProducts</b><br>Test class: testcases.ProductsTest<br>Test method: get all products</td>
+<td></td>
+<td>3</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.SchemaTests.testProductSchema()'><b>testProductSchema</b><br>Test class: testcases.SchemaTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.SchemaTests@7fd7a283</td></tr>
+<tr>
+<td title='testcases.LoginTests.testvalidUserLogin()'><b>testvalidUserLogin</b><br>Test class: testcases.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.LoginTests@7ac296f6</td></tr>
+<tr>
+<td title='testcases.ProductDataDriven.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDriven<br>Parameters: {id=1, title=Heavy Duty Rubber Car, price=97.45, description=Magni quibusdam nihil magni., image=https://1.pradeep.cc/121, category=beauty}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDriven@41488b16</td></tr>
+<tr>
+<td title='testcases.UserTests.testCreateUser()'><b>testCreateUser</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>1</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.UserTests.testGetAllUsers()'><b>testGetAllUsers</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGettheAllByCategories()'><b>tetsGettheAllByCategories</b><br>Test class: testcases.ProductsTest<br>Test method: get the  all by  categories </td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGetSingleProductByID()'><b>tetsGetSingleProductByID</b><br>Test class: testcases.ProductsTest<br>Test method: get the single products by ID</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsUpdateProduct()'><b>tetsUpdateProduct</b><br>Test class: testcases.ProductsTest<br>Test method: update the existing product </td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.UserTests.testUpdateUser()'><b>testUpdateUser</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGetProductBySortedAscending()'><b>tetsGetProductBySortedAscending</b><br>Test class: testcases.ProductsTest<br>Test method: get the  products by sort decending order</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.UserTests.testGetUsersSortedAsc()'><b>testGetUsersSortedAsc</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsAddnewProduct()'><b>tetsAddnewProduct</b><br>Test class: testcases.ProductsTest<br>Test method: add new products </td>
+<td></td>
+<td>2</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.ProductsTest.tetsGettheAllCategories()'><b>tetsGettheAllCategories</b><br>Test class: testcases.ProductsTest<br>Test method: get the  all categories </td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductsTest@7d9f158f</td></tr>
+<tr>
+<td title='testcases.UserTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@a8ef162</td></tr>
+</table><p>
+</body>
+</html>

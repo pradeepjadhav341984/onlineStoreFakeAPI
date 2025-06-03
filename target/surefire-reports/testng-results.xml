@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="29" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-03T14:34:48 IST" name=" APU Test Suite" finished-at="2025-06-03T14:35:26 IST" duration-ms="38766">
+    <groups>
+    </groups>
+    <test started-at="2025-06-03T14:34:48 IST" name="Test" finished-at="2025-06-03T14:35:26 IST" duration-ms="38766">
+      <class name="testcases.UserTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:12 IST" name="setUp" finished-at="2025-06-03T14:35:12 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateUser()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:12 IST" name="testCreateUser" finished-at="2025-06-03T14:35:13 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method signature="testDeleteUser()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:13 IST" name="testDeleteUser" finished-at="2025-06-03T14:35:14 IST" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method signature="testGetAllUsers()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:14 IST" name="testGetAllUsers" finished-at="2025-06-03T14:35:15 IST" duration-ms="942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllUsers -->
+        <test-method signature="testGetUserById()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:15 IST" name="testGetUserById" finished-at="2025-06-03T14:35:15 IST" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserById -->
+        <test-method signature="testGetUsersSorted()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:15 IST" name="testGetUsersSorted" finished-at="2025-06-03T14:35:16 IST" duration-ms="864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsersSorted -->
+        <test-method signature="testGetUsersSortedAsc()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:16 IST" name="testGetUsersSortedAsc" finished-at="2025-06-03T14:35:17 IST" duration-ms="911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsersSortedAsc -->
+        <test-method signature="testGetUsersWithLimit()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:17 IST" name="testGetUsersWithLimit" finished-at="2025-06-03T14:35:19 IST" duration-ms="2098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsersWithLimit -->
+        <test-method signature="testUpdateUser()[pri:0, instance:testcases.UserTests@4e5ed836]" started-at="2025-06-03T14:35:19 IST" name="testUpdateUser" finished-at="2025-06-03T14:35:20 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+      </class> <!-- testcases.UserTests -->
+      <class name="testcases.CartTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTests@eadd4fb]" started-at="2025-06-03T14:35:20 IST" name="setUp" finished-at="2025-06-03T14:35:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateCart()[pri:0, instance:testcases.CartTests@eadd4fb]" started-at="2025-06-03T14:35:20 IST" name="testCreateCart" finished-at="2025-06-03T14:35:21 IST" duration-ms="702" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path userId doesn't match.
+Expected: <1>
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path userId doesn't match.
+Expected: <1>
+  Actual: null
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at testcases.CartTests.testCreateCart(CartTests.java:154)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCart -->
+      </class> <!-- testcases.CartTests -->
+      <class name="testcases.ProductDataDriven">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:02 IST" name="setUp" finished-at="2025-06-03T14:35:02 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:02 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-06-03T14:35:04 IST" duration-ms="1533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=1, title=Heavy Duty Rubber Car, price=97.45, description=Magni quibusdam nihil magni., image=https://1.pradeep.cc/121, category=beauty}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:04 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-06-03T14:35:05 IST" duration-ms="1546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=2, title=Wireless Sports Headband, price=25.99, description=Comfortable and sweat-resistant for athletes., image=https://1.pradeep.cc/122, category=sports}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:05 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-06-03T14:35:07 IST" duration-ms="1589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=3, title=Smart LED TV 55", price=499.00, description=Ultra HD with built-in apps and voice control., image=https://1.pradeep.cc/123, category=tv}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:07 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-06-03T14:35:09 IST" duration-ms="1648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=4, title=Noise Cancelling Headphones, price=129.99, description=Crystal clear audio with deep bass., image=https://1.pradeep.cc/124, category=audio}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:09 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-06-03T14:35:10 IST" duration-ms="1567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=5, title=4G Dual SIM Smartphone, price=299.99, description=Latest Android OS with long-lasting battery., image=https://1.pradeep.cc/125, category=mobile}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDriven@2ab4bc72]" started-at="2025-06-03T14:35:10 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-06-03T14:35:12 IST" duration-ms="1606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=6, title=Portable Bluetooth Speaker, price=45.50, description=Waterproof and perfect for outdoor use., image=https://1.pradeep.cc/126, category=electronics}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNewProduct -->
+      </class> <!-- testcases.ProductDataDriven -->
+      <class name="testcases.ProductsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:48 IST" name="setUp" finished-at="2025-06-03T14:34:48 IST" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tetsGetAllProducts()[pri:1, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:48 IST" name="tetsGetAllProducts" description="get all products" finished-at="2025-06-03T14:34:53 IST" duration-ms="4798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGetAllProducts -->
+        <test-method signature="tetsGetSingleProductByID()[pri:2, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:53 IST" name="tetsGetSingleProductByID" description="get the single products by ID" finished-at="2025-06-03T14:34:54 IST" duration-ms="830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGetSingleProductByID -->
+        <test-method signature="tetsGetProductByLimit()[pri:3, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:54 IST" name="tetsGetProductByLimit" description="get the  products by limit" finished-at="2025-06-03T14:34:55 IST" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGetProductByLimit -->
+        <test-method signature="tetsGetProductBySortedDending()[pri:4, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:55 IST" name="tetsGetProductBySortedDending" description="get the  products by sort decending order" finished-at="2025-06-03T14:34:56 IST" duration-ms="882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGetProductBySortedDending -->
+        <test-method signature="tetsGetProductBySortedAscending()[pri:5, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:56 IST" name="tetsGetProductBySortedAscending" description="get the  products by sort decending order" finished-at="2025-06-03T14:34:57 IST" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGetProductBySortedAscending -->
+        <test-method signature="tetsGettheAllCategories()[pri:6, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:57 IST" name="tetsGettheAllCategories" description="get the  all categories " finished-at="2025-06-03T14:34:57 IST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGettheAllCategories -->
+        <test-method signature="tetsGettheAllByCategories()[pri:7, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:57 IST" name="tetsGettheAllByCategories" description="get the  all by  categories " finished-at="2025-06-03T14:34:58 IST" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsGettheAllByCategories -->
+        <test-method signature="tetsAddnewProduct()[pri:8, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:34:58 IST" name="tetsAddnewProduct" description="add new products " finished-at="2025-06-03T14:35:00 IST" duration-ms="1359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsAddnewProduct -->
+        <test-method signature="tetsUpdateProduct()[pri:9, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:35:00 IST" name="tetsUpdateProduct" description="update the existing product " finished-at="2025-06-03T14:35:01 IST" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsUpdateProduct -->
+        <test-method signature="tetsDeleteProduct()[pri:10, instance:testcases.ProductsTest@6f53b8a]" started-at="2025-06-03T14:35:01 IST" name="tetsDeleteProduct" description="delete the existing product " finished-at="2025-06-03T14:35:02 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tetsDeleteProduct -->
+      </class> <!-- testcases.ProductsTest -->
+      <class name="testcases.SchemaTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SchemaTests@7bd7d6d6]" started-at="2025-06-03T14:35:24 IST" name="setUp" finished-at="2025-06-03T14:35:24 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartSchema()[pri:0, instance:testcases.SchemaTests@7bd7d6d6]" started-at="2025-06-03T14:35:24 IST" name="testCartSchema" finished-at="2025-06-03T14:35:25 IST" duration-ms="1230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartSchema -->
+        <test-method signature="testProductSchema()[pri:0, instance:testcases.SchemaTests@7bd7d6d6]" started-at="2025-06-03T14:35:25 IST" name="testProductSchema" finished-at="2025-06-03T14:35:25 IST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductSchema -->
+        <test-method signature="testUserSchema()[pri:0, instance:testcases.SchemaTests@7bd7d6d6]" started-at="2025-06-03T14:35:25 IST" name="testUserSchema" finished-at="2025-06-03T14:35:26 IST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserSchema -->
+      </class> <!-- testcases.SchemaTests -->
+      <class name="testcases.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@740fb309]" started-at="2025-06-03T14:35:21 IST" name="setUp" finished-at="2025-06-03T14:35:21 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidUserLogin()[pri:0, instance:testcases.LoginTests@740fb309]" started-at="2025-06-03T14:35:21 IST" name="testInvalidUserLogin" finished-at="2025-06-03T14:35:23 IST" duration-ms="1890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserLogin -->
+        <test-method signature="testvalidUserLogin()[pri:0, instance:testcases.LoginTests@740fb309]" started-at="2025-06-03T14:35:23 IST" name="testvalidUserLogin" finished-at="2025-06-03T14:35:24 IST" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testvalidUserLogin -->
+      </class> <!-- testcases.LoginTests -->
+    </test> <!-- Test -->
+  </suite> <!--  APU Test Suite -->
+</testng-results>

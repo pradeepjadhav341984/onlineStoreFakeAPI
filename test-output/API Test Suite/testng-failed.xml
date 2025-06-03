@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="classes" name="Failed suite [API Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.ExtentReporter"/>
+  </listeners>
+  <test thread-count="6" parallel="classes" name="Parallel Test Execution(failed)">
+    <classes>
+      <class name="testcases.ProductDataDriven">
+        <methods>
+          <include name="testAddNewProduct" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.ProductDataDriven -->
+      <class name="testcases.ProductsTest">
+        <methods>
+          <include name="tetsGetSingleProductByID"/>
+          <include name="tetsGetAllProducts"/>
+          <include name="tetsAddnewProduct"/>
+          <include name="tetsUpdateProduct"/>
+          <include name="tetsGettheAllByCategories"/>
+          <include name="tetsGetProductByLimit"/>
+          <include name="tetsDeleteProduct"/>
+          <include name="tetsGettheAllCategories"/>
+          <include name="tetsGetProductBySortedAscending"/>
+          <include name="tetsGetProductBySortedDending"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.ProductsTest -->
+      <class name="testcases.UserTests">
+        <methods>
+          <include name="testDeleteUser"/>
+          <include name="testGetUsersSorted"/>
+          <include name="testGetUsersSortedAsc"/>
+          <include name="testGetAllUsers"/>
+          <include name="testGetUsersWithLimit"/>
+          <include name="testCreateUser"/>
+          <include name="testUpdateUser"/>
+          <include name="testGetUserById"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.UserTests -->
+      <class name="testcases.LoginTests">
+        <methods>
+          <include name="testvalidUserLogin"/>
+          <include name="testInvalidUserLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.LoginTests -->
+      <class name="testcases.SchemaTests">
+        <methods>
+          <include name="testCartSchema"/>
+          <include name="testProductSchema"/>
+          <include name="testUserSchema"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.SchemaTests -->
+      <class name="testcases.CartTests">
+        <methods>
+          <include name="testCreateCart"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.CartTests -->
+    </classes>
+  </test> <!-- Parallel Test Execution(failed) -->
+</suite> <!-- Failed suite [API Test Suite] -->

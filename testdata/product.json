@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Heavy Duty Rubber Car",
+    "price": 97.45,
+    "description": "Magni quibusdam nihil magni.",
+    "image": "https://1.pradeep.cc/121",
+    "category": "beauty"
+  },
+  {
+    "id": 2,
+    "title": "Wireless Sports Headband",
+    "price": 25.99,
+    "description": "Comfortable and sweat-resistant for athletes.",
+    "image": "https://1.pradeep.cc/122",
+    "category": "sports"
+  },
+  {
+    "id": 3,
+    "title": "Smart LED TV 55\"",
+    "price": 499.00,
+    "description": "Ultra HD with built-in apps and voice control.",
+    "image": "https://1.pradeep.cc/123",
+    "category": "tv"
+  },
+  {
+    "id": 4,
+    "title": "Noise Cancelling Headphones",
+    "price": 129.99,
+    "description": "Crystal clear audio with deep bass.",
+    "image": "https://1.pradeep.cc/124",
+    "category": "audio"
+  },
+  {
+    "id": 5,
+    "title": "4G Dual SIM Smartphone",
+    "price": 299.99,
+    "description": "Latest Android OS with long-lasting battery.",
+    "image": "https://1.pradeep.cc/125",
+    "category": "mobile"
+  },
+  {
+    "id": 6,
+    "title": "Portable Bluetooth Speaker",
+    "price": 45.50,
+    "description": "Waterproof and perfect for outdoor use.",
+    "image": "https://1.pradeep.cc/126",
+    "category": "electronics"
+  }
+]
